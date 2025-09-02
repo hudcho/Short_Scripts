@@ -1,3 +1,7 @@
+#Simple script that brute forces an affine cipher shift. This version assumes that the multiplier, A, is known and that ciphertext is also known
+#Iterates through 26 shift possibilites for B allowing you to quickly see which shift provides readable english
+
+
 
 def decrypt(ciphertext, A, B):
     plaintext = "" 
@@ -22,3 +26,4 @@ def bruteForceIt (ciphertext, A):
 ciphertext = input("Enter ciphertext: ")
 multiplier = int(input("Enter multiplier: "))
 bruteForceIt(ciphertext, multiplier)
+
